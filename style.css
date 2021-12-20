@@ -1,0 +1,660 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+@media screen and (min-width:700px){
+				
+#home{
+    width:100%;
+    height:600px;
+}
+.photob{
+width: 100%;
+height:580px;
+border:solid 1px;
+border-radius:44% 10% 48% 48% / 0% 0% 65% 67%;
+background-image: url('1.jpeg');
+background-size: 100% 100%;
+}
+.menu-table{
+    width:100%;
+    height:50px;
+    background:#2b2929;
+    opacity: 0.7;
+    position: fixed;
+}
+.logo{
+    width:30%;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 35px;
+    color:white;
+}
+.hamburgeruu{
+display: none;
+}
+.bttn{
+    width:70%;
+}
+.uu{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color:white;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    text-decoration:none;
+    padding:6px 13px;
+    border-radius: 7px;
+}
+a:hover{
+    background: black;
+}
+.content-table{
+    width:400px;
+    height:180px;
+    border-radius: 20px;
+    position: relative;
+    top:95px;
+    left:100px;
+    background: #ded9d9;
+    opacity: 0.7;
+    box-shadow: -1px -4px 251px 0px rgba(0,0,0,1);
+}
+.content-table p:nth-child(1){
+    color:black;
+    font-size: 30px;
+}
+/*---Home Section Learn More Button Start--*/
+.btn{
+color:black;
+padding:10px 20px;
+position: absolute;
+top:420px;
+left:300px;
+font-size:30px;
+transform:translate(-50%, -50%);
+latter-spacing:2px;
+text-decoration: none;
+transition: all 3s;
+overflow: hidden;
+}
+.btn:hover{
+color:red;
+box-shadow:0 0 10px #ff555f, 0 0 30px #ff555f, 0 0 60px #ff555f;
+}
+.btn:before{
+content:'';
+position:absolute;
+top:2px;
+left:2px;
+bottom:2px;
+width:50%;
+background:rgba(255,255,255,0.08);
+}
+.btn span:nth-child(1){
+position: absolute;
+top: 0;
+left: 0;
+width:100%;
+height:2px;
+background:linear-gradient(to right, white, #ff555f);
+animation: anime 2s infinite;
+}
+@keyframes anime {
+0%{transform: translateX(-100%);}
+100%{transform: translateX(100%);}
+}
+
+.btn span:nth-child(2){
+position: absolute;
+top: 0;
+right: 0;
+width:2px;
+height:100%;
+background:linear-gradient(to right, white, #ff555f);
+animation: anime2 2s infinite;
+animation-delay: 1s;
+}
+@keyframes anime2 {
+0%{transform: translatey(-100%);}
+100%{transform: translatey(100%);}
+}
+.btn span:nth-child(3){
+position: absolute;
+bottom: 1;
+left: 0;
+width:100%;
+height:2px;
+background:linear-gradient(to right, #ff555f, white);
+animation: anime3 2s infinite;
+}
+@keyframes anime3 {
+0%{transform: translatex(100%);}
+100%{transform: translatex(-100%);}
+}
+.btn span:nth-child(4){
+position: absolute;
+top: 0;
+left: 0;
+width:2px;
+height:100%;
+background:linear-gradient(to right, white, #ff555f);
+animation: anime4 2s infinite;
+animation-delay: 1s;
+}
+@keyframes anime4 {
+0%{transform: translatey(100%);}
+100%{transform: translatey(-100%);}
+}
+/*---Home Section Learn More Button End----*/
+/*-------------------------------------------
+-------------About section start-------------
+-------------------------------------------*/
+/*--------About div start------------------*/
+#About{
+width: 100%;
+height: 550px;
+border-collapse: collapse;
+}
+/*-------About section table start---------*/
+.about-table{
+width: 100%;
+height: 100%;
+border-collapse: collapse;
+}
+/*--------About section photo part start---*/
+.photo1{
+width: 40%;
+height: 100%;
+}
+/*---photo background border design start--*/
+.bb
+{
+width:250px;
+height:320px;
+border-radius: 15px;
+position: relative;
+box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+}
+/*---photo background border design end----*/
+.photo{
+background: #bccbff;
+background-image: url('b.png');
+background-size: 100% 150%;
+border-radius: 15px;
+width: 250px;
+height:320px;
+position: relative;
+top: -40px;
+left: 8%;
+
+}
+/*--------About section photo part end-----*/
+/*----About section content part start-----*/
+.about-content{
+width: 60%;
+height:100%;
+}
+/*--About section writing table start------*/
+.about-second-table{
+width: 95%;
+height:70%;
+border-collapse: collapse;
+}
+/*-----------1st writing start-------------*/
+.about-write1{
+height:60px;
+}
+.a{
+font-size: 35px;
+border-left: solid 6px red;
+border-radius: 4px 4px;
+padding-left: 10px;
+font-family: 'Fugaz One', cursive;
+
+
+}
+/*------------1st writing end--------------*/
+/*-------------2nd writing start-----------*/
+.about-write2{
+height:140px;
+background: lightblue;
+border-radius: 0px 30px 30px 0px;
+}
+/*----2nd writing paragraph design start---*/
+/*------------1st paragraph----------------*/
+.about-write2 p:nth-child(1){
+color:blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*------------2nd paragraph----------------*/
+.about-write2 p:nth-child(2){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*----2nd writing paragraph design end-----*/
+/*-------------2nd writing end-------------*/
+/*-------------3rd writing start-----------*/
+.about-write3{
+height:50px;
+}
+.a1{
+font-size: 35px;
+border-left: solid 6px #1100ff;
+border-radius: 4px 4px;
+padding-left: 10px;
+font-family: 'Fugaz One', cursive;
+
+
+}
+/*-------------3rd writing end-------------*/
+/*-------------4th writing start-----------*/
+.about-write4{
+height:170px;
+background:#ffaadf;
+border-radius: 0px 30px 30px 0px;
+}
+/*----4th writing paragraph design start---*/
+/*------------1st paragraph----------------*/
+.about-write4 p:nth-child(1){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*------------2nd paragraph----------------*/
+.about-write4 p:nth-child(2){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*------------3rd paragraph----------------*/
+.about-write4 p:nth-child(3){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*------------4th paragraph----------------*/
+.about-write4 p:nth-child(4){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*------------5th paragraph----------------*/
+.about-write4 p:nth-child(5){
+color: blue;
+font-size: 25px;
+font-style: italic;
+font-family: 'Chakra Petch', sans-serif;
+}
+/*----4th writing paragraph design end-----*/
+/*-------------4th writing end-------------*/
+/*----About section content part end-------*/
+/*----------About section table end--------*/
+/*------------About div end----------------*/
+
+.skills{
+width: 100%;
+height: 450px;
+border-collapse: collapse;
+}
+
+.skill{
+	height: 25%;
+}
+.p321{
+		font-size: 45px;
+		font-style: italic;
+		font-family: 'Righteous', cursive;
+}
+
+.html-writing{
+width:20%;
+font-size: 35px;
+font-family: 'Aldrich', sans-serif;
+}
+.html-box{
+width: 90%;
+height: 30%;
+border:solid 1px;
+}
+.html-skill{
+width: 90%;
+height: 100%;
+background: #ff001f;
+float: left;
+}
+.css-writing{
+width:20%;
+font-size: 35px;
+font-family: 'Aldrich', sans-serif;
+}
+.css-box{
+width: 90%;
+height: 30%;
+border:solid 1px;
+}
+.css-skill{
+width: 80%;
+height: 100%;
+background: #ff001f;
+float: left;
+}
+.javascript-writing{
+width:20%;
+font-size: 35px;
+font-family: 'Aldrich', sans-serif;
+}
+.javascript-box{
+width: 90%;
+height: 30%;
+border:solid 1px;
+}
+.javascript-skill{
+width: 50%;
+height: 100%;
+background: #ff001f;
+float: left;
+}
+.photoshop-writing{
+width:20%;
+font-size: 35px;
+font-family: 'Aldrich', sans-serif;
+}
+
+.photoshop-box{
+width: 90%;
+height: 30%;
+border:solid 1px;
+}
+
+.photoshop-skill{
+width: 60%;
+height: 100%;
+background: #ff001f;
+float: left;
+}
+
+.slid{
+width: 100%;
+height:350px;
+overflow: hidden;
+}
+
+.slider{
+width: 400%;
+height:100%;
+border-collapse: collapse;
+position: relative;
+left: 0;
+animation: anim 8s infinite;
+}
+
+.p1{
+width: 25%;
+height: 100%;
+background-image: url("1.jpg");
+background-size: 100% 100%;
+}
+
+.p2{
+width: 25%;
+height: 100%;
+background-image: url("2.jpg");
+background-size: 100% 100%;
+}
+
+.p3{
+width: 25%;
+height: 100%;
+background-image: url("3.jpg");
+background-size: 100% 100%;
+}
+
+.p4{
+width: 25%;
+height: 100%;
+background-image: url("4.jpg");
+background-size: 100% 100%;
+}
+
+@keyframes anim {
+	0%{position: relative; left:-0px;}			
+  50%{position: relative; left:-100%;}		
+  75%{position: relative; left:-200%;}
+  100%{position: relative; left:-300%;}			
+}
+.photos1{
+    width:100%;
+    height:300px;
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#portfolio{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.www{
+    width: 100%;
+    height:90px;
+    text-align: center;
+    overflow: hidden;
+}
+.www p:nth-child(1){
+    font-size:45px;
+    padding-top: 20px;
+    color: red;
+    font-style: italic;
+    font-family: 'Righteous', cursive;
+}
+
+#box1{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+	position: relative;
+	
+}
+
+#box2{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+    	position: relative;
+	
+}
+     
+.box3{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+   
+}
+.box4{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+    
+}
+.box5{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+     
+}
+.box6{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+      
+}
+.box7{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+   
+}
+.box8{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+   
+}
+.box9{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+    
+}
+.box10{
+    width:400px;
+    height:200px;
+    margin:30px 25px;
+    border-radius: 20px;
+    box-shadow: -1px -4px 39px 0px rgba(0,0,0,1);
+    
+}
+
+
+#Contact{
+    width:100%;
+    height:650px;
+}
+
+.contact-page-header-writing{
+font-size: 45px;
+font-style: italic;
+font-family: 'Righteous', cursive;
+color: red;
+}
+.contact-second-table
+{
+border: solid 2px;
+border-collapse: collapse;
+}
+.contact-left-box{
+width: 60%;
+}
+.contact-right-box{
+width: 40%;
+background: #fff;
+opacity: 1;
+overflow: hidden;
+}
+#n1{
+width: 65%;
+height: 40px;
+}
+.container{
+width: 100%;
+position:relative;
+}
+input{
+			width: 100%;
+			padding: 10px;
+			font-size: 20px;
+			color: black;
+			outline: none;
+			border:none;
+			border-bottom: solid 1px #2d8eff;
+}
+span{
+	position:absolute;
+	top:10px;
+	left:5px;
+	font-size: 20px;
+	letter-spacing:0.05em;
+	color:#2d8eff;
+	pointer-events: none;
+	font-weight: 600;
+	font-family: sans-serif;
+	transition: all 1s;
+}
+input:focus{
+		border: none;
+		outline: 1px solid #2d8eff;
+		
+}
+input:focus + span,
+input:valid + span{
+			top:-12px;
+			left: 10px;
+			font-size:20px;
+			padding: 0 10px;
+			background:white;
+			
+}
+input:valid{
+			border: solid 1px #2d8eff;
+}
+
+#n2{
+width: 65%;
+height: 90px;
+}
+.submi{
+width: 100px;
+height: 40px;
+font-size: 25px;
+letter-spacing: 2px;
+justify-content: space-around;
+}
+
+.contact-left-box{
+background-image: url('location.jpeg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+.foote{
+width: 100%;
+height: 200px;
+}
+}
+
+#fo{
+width: 130px;
+height:100px;
+border:solid 1px;
+background: blue;
+position:relative;
+bottom: -200px;
+}
